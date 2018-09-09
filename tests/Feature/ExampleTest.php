@@ -15,7 +15,7 @@ class ExampleTest extends TestCase
     public function testBasicTest()
     {
 
-        $data = json_encode(['cdk'=>'FE8924B077','__access_time__'=>time()]);
+        $data = json_encode(['cdk'=>'8DC89A2916','__access_time__'=>time()]);
         echo \Rsa::pubEncrypt($data);
         $this->assertTrue(true);
     }
