@@ -19,7 +19,7 @@ class CdkController extends Controller
 
             $cdk = \Tools::createCdk();
 
-            DB::insert('insert into com_cdkey (cdkey,add_time) values (?, ?,?)', [$cdk, time()]);
+            DB::insert('insert into com_cdkey (cdkey,add_time) values (?, ?)', [$cdk, time()]);
             echo $i + 1;
         }
 
