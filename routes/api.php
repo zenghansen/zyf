@@ -16,3 +16,10 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::middleware('rsa:api')->group(function () {
+
+    Route::post('authcdk', 'CdkController@authcdk');
+});
+
+Route::post('makecdk', 'CdkController@makecdk');
