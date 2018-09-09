@@ -2,6 +2,7 @@
 
 namespace App\Console\Commands;
 
+use App\Http\Controllers\CdkController;
 use Illuminate\Console\Command;
 
 class makecdk extends Command
@@ -38,6 +39,7 @@ class makecdk extends Command
     public function handle()
     {
         $num = $this->argument('num');
-        echo file_get_contents("https://127.0.0.1/api/makecdk?num=" . $num);
+        $c = new CdkController();
+        $c->makecdk($num);
     }
 }

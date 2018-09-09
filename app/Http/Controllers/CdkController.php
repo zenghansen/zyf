@@ -10,10 +10,8 @@ use Illuminate\Support\Facades\Input;
 
 class CdkController extends Controller
 {
-    public function makecdk(Request $request)
+    public function makecdk($num = 1)
     {
-
-        $num = $request->get('num', 1);
 
         for ($i = 0; $i < $num; $i++) {
 
