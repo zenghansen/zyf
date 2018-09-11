@@ -80,6 +80,3 @@ kUV8SN0dqpddImcStwIDAQAB
     }
 
 }
-
-$a = Rsa::pubEncrypt("123");
-echo $b = Rsa::privDecrypt($a);
